@@ -13,6 +13,7 @@ import habotLinkedin from "./assets/habot-linkedin.png";
 import habotFb from "./assets/habot-fb.png";
 import habotTwitter from "./assets/habot-twitter.png";
 import footerLogo from "./assets/footer-logo-habot.png";
+import heroBack from './assets/heroBack.png';
 
 import "./HabotLanding.css";
 
@@ -41,7 +42,8 @@ const HabotLanding = () => {
         </div>
       </nav>
 
-      <div className="habit-hero-container">
+      <div className="habit-hero-container" style={{
+    backgroundImage: `url(${heroBack})`}}>
         <div className="habit-hero-background-overlay">
           <div className="habit-hero-content">
             <h1>Are You a Supplier?</h1>
