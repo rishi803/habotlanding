@@ -1,0 +1,700 @@
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.habot-landing {
+  max-width: 1350px;
+  padding: 10px 15px;
+  padding-bottom: 0;
+  margin: auto;
+}
+
+.habot-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+.habot-logo img {
+  max-height: 50px;
+}
+
+.habot-nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  gap: 40px;
+}
+
+.habot-nav-btn {
+  border: 1px solid green;
+  border-radius: 2px;
+  padding: 10px 25px;
+  color: rgb(13, 85, 13);
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 3px;
+  background-color: grey;
+  border-radius: 2px;
+}
+
+.habit-hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(".\assets\heroBack.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.habit-hero-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.habit-hero-content {
+  text-align: center;
+  color: white;
+  padding: 0 20px; 
+}
+
+.habit-hero-content h1 {
+  font-size: 55px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.habit-hero-content h2 {
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+  line-height: 45px;
+}
+
+.habit-hero-search-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.habit-hero-input-box {
+  width: 380px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.habit-hero-search-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.habit-hero-search-button:hover {
+  background-color: #218838;
+}
+
+.habit-hero-buyer-text {
+  font-size: 0.9rem;
+}
+
+.habit-hero-buyer-text a {
+  color: #9abda2;
+  text-decoration: underline;
+  text-decoration-color: #9abda2;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.habit-hero-buyer-text a:hover {
+  text-decoration: underline;
+}
+
+.habot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  gap: 1rem;
+  background-color: #fff;
+}
+
+.habot-left-section {
+  width: 50%;
+}
+
+.habot-left-section h1 {
+  font-size: 37px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.habot-highlight {
+  color: #5a2d82;
+  font-weight: bold;
+}
+
+.habot-left-section p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.habot-signup-button {
+  background-color: #00732f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.habot-signup-button:hover {
+  background-color: #218838;
+}
+
+.habot-right-section {
+  width: 45%;
+}
+
+.habot-locations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.habot-location {
+  border: 1px solid #f4a261;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.habot-location:hover {
+  background-color: #f4a261;
+  color: #fff;
+}
+
+.buyer-supplier-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1225px;
+  margin: auto;
+  margin-top: 30px;
+  place-content: start;
+  background-color: #00274d;
+  padding: 80px 40px;
+  border-radius: 5px;
+  color: white;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.main-video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.youtube-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.tabs {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.tab {
+  font-weight: bold;
+  padding: 10px 50px;
+  position: relative;
+}
+
+.buyer {
+  color: #ff5733;
+  border-bottom: 3px solid #ff5733;
+}
+
+.supplier {
+  color: white;
+}
+
+.features-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.features-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.habot-suppliers {
+  background-color: #e8fbff;
+  margin-top: 100px;
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+
+.habot-suppliers-text {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.habot-suppliers-btn {
+  background-color: #eb7150;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 4px;
+}
+
+.habot-suppliers-styled-text {
+  border-bottom: 4px solid #eb7150;
+}
+
+.how-it-works {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.how-it-works h2 {
+  font-size: 37px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works .description {
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: 900px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:nth-child(1),
+.card:nth-child(3),
+.card:nth-child(5) {
+  background-color: #e8ebff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.habot-footer {
+  background-color: #123557;
+  padding: 50px;
+}
+
+.habot-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  width: inherit;
+  padding: 20px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+.habot-footer .active {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.habot-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (max-width: 1200px) {
+  .habit-hero-content h1 {
+    font-size: 45px;
+  }
+  .habit-hero-content h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .habit-hero-input-box {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1067px) {
+  .habot-footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .habit-hero-content h1 {
+    font-size: 40px;
+  }
+  .habit-hero-content h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .habit-hero-input-box {
+    width: 280px;
+  }
+  .habit-hero-search-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .card:nth-child(2),
+  .card:nth-child(3),
+  .card:nth-child(6) {
+    background-color: #e8ebff;
+  }
+  .card:nth-child(1),
+  .card:nth-child(5) {
+    background-color: white;
+  }
+}
+
+@media (max-width: 955px) {
+  .tabs {
+    gap: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .habot-nav-items {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+    display: none;
+  }
+
+  .habot-nav-items.open {
+    display: flex;
+    background-color: rgb(205, 190, 190);
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    height: 220px;
+    transform: translateX(30px);
+    transition: transform 1s ease;
+    gap: 19px;
+    z-index: 1;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .habit-hero-content h1 {
+    font-size: 35px;
+  }
+  .habit-hero-content h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .habit-hero-input-box {
+    width: 100%;
+  }
+  .habit-hero-search-bar {
+    flex-direction: column;
+  }
+
+  .how-it-works h2 {
+    font-size: 1.8rem;
+  }
+
+  .how-it-works .description {
+    font-size: 0.9rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .habot-left-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .habot-left-section p {
+    font-size: 0.9rem;
+  }
+
+  .habot-signup-button {
+    font-size: 0.9rem;
+  }
+
+  .buyer-supplier-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .habot-suppliers {
+    line-height: 32px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .habot-suppliers-text {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .tabs {
+    justify-content: center;
+    margin: auto;
+  }
+  .features-list {
+    margin: 30px auto;
+  }
+  .features-list li {
+    justify-content: center;
+  }
+  .footer-left {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 670px) {
+  .card:nth-child(2),
+  .card:nth-child(4),
+  .card:nth-child(6) {
+    background-color: white;
+  }
+  .card:nth-child(1),
+  .card:nth-child(3),
+  .card:nth-child(5) {
+    background-color: #e8ebff;
+  }
+}
+
+@media (max-width: 576px) {
+  .habit-hero-content h1 {
+    font-size: 30px;
+  }
+  .habit-hero-content h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .habit-hero-input-box {
+    font-size: 0.9rem;
+  }
+  .habit-hero-search-button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .habit-hero-content h1 {
+    font-size: 25px;
+  }
+  .habit-hero-content h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .habit-hero-buyer-text {
+    font-size: 0.8rem;
+  }
+  .habit-hero-buyer-text a {
+    font-size: 0.8rem;
+  }
+
+  .habot-left-section {
+    width: 100% !important;
+  }
+
+  .habot-right-section {
+    width: 100% !important;
+  }
+
+  .habot-signup-button {
+    margin: auto;
+  }
+
+  .buyer-supplier-section {
+    place-content: center;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-video {
+    max-width: 400px;
+    width: 320px;
+  }
+
+  .features-list {
+    padding: 5px 20px;
+  }
+
+  .habot-suppliers {
+    line-height: 32px;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .habot-suppliers-text {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center !important;
+    padding: 3%;
+    gap: 0;
+  }
+
+  .footer-content-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+}
